@@ -1,0 +1,14 @@
+C:\Users\Sigursteinn Bragi\source\repos\prufa\prufa\obj\Debug\net8.0\prufa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sigursteinn Bragi\source\repos\prufa\prufa\obj\Debug\net8.0\prufa.AssemblyInfoInputs.cache
+C:\Users\Sigursteinn Bragi\source\repos\prufa\prufa\obj\Debug\net8.0\prufa.AssemblyInfo.cs
+C:\Users\Sigursteinn Bragi\source\repos\prufa\prufa\obj\Debug\net8.0\prufa.csproj.CoreCompileInputs.cache
+C:\Users\Sigursteinn Bragi\source\repos\prufa\prufa\bin\Debug\net8.0\prufa.exe
+C:\Users\Sigursteinn Bragi\source\repos\prufa\prufa\bin\Debug\net8.0\prufa.deps.json
+C:\Users\Sigursteinn Bragi\source\repos\prufa\prufa\bin\Debug\net8.0\prufa.runtimeconfig.json
+C:\Users\Sigursteinn Bragi\source\repos\prufa\prufa\bin\Debug\net8.0\prufa.dll
+C:\Users\Sigursteinn Bragi\source\repos\prufa\prufa\bin\Debug\net8.0\prufa.pdb
+C:\Users\Sigursteinn Bragi\source\repos\prufa\prufa\obj\Debug\net8.0\prufa.dll
+C:\Users\Sigursteinn Bragi\source\repos\prufa\prufa\obj\Debug\net8.0\refint\prufa.dll
+C:\Users\Sigursteinn Bragi\source\repos\prufa\prufa\obj\Debug\net8.0\prufa.pdb
+C:\Users\Sigursteinn Bragi\source\repos\prufa\prufa\obj\Debug\net8.0\prufa.genruntimeconfig.cache
+C:\Users\Sigursteinn Bragi\source\repos\prufa\prufa\obj\Debug\net8.0\ref\prufa.dll
