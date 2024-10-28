@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\Test2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B14DDCFB-FCE1-4FB3-8F56-CE7F14E2E2AE}|Test2\\Test2.csproj|c:\\users\\sigursteinn bragi\\source\\repos\\test2\\test2\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14DDCFB-FCE1-4FB3-8F56-CE7F14E2E2AE}|Test2\\Test2.csproj|solutionrelative:test2\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14DDCFB-FCE1-4FB3-8F56-CE7F14E2E2AE}|Test2\\Test2.csproj|c:\\users\\sigursteinn bragi\\source\\repos\\test2\\test2\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14DDCFB-FCE1-4FB3-8F56-CE7F14E2E2AE}|Test2\\Test2.csproj|solutionrelative:test2\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14DDCFB-FCE1-4FB3-8F56-CE7F14E2E2AE}|Test2\\Test2.csproj|c:\\users\\sigursteinn bragi\\source\\repos\\test2\\test2\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14DDCFB-FCE1-4FB3-8F56-CE7F14E2E2AE}|Test2\\Test2.csproj|solutionrelative:test2\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14DDCFB-FCE1-4FB3-8F56-CE7F14E2E2AE}|Test2\\Test2.csproj|c:\\users\\sigursteinn bragi\\source\\repos\\test2\\test2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14DDCFB-FCE1-4FB3-8F56-CE7F14E2E2AE}|Test2\\Test2.csproj|solutionrelative:test2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14DDCFB-FCE1-4FB3-8F56-CE7F14E2E2AE}|Test2\\Test2.csproj|c:\\users\\sigursteinn bragi\\source\\repos\\test2\\test2\\test2.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{B14DDCFB-FCE1-4FB3-8F56-CE7F14E2E2AE}|Test2\\Test2.csproj|solutionrelative:test2\\test2.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\Test2\\Test2\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "Test2\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\Test2\\Test2\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "Test2\\Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T11:19:21.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\Test2\\Test2\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Test2\\Models\\Course.cs",
+              "ToolTip": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\Test2\\Test2\\Models\\Course.cs",
+              "RelativeToolTip": "Test2\\Models\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T11:17:41.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\Test2\\Test2\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Test2\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\Test2\\Test2\\Models\\Student.cs",
+              "RelativeToolTip": "Test2\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T11:16:37.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Test2.http",
+              "DocumentMoniker": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\Test2\\Test2\\Test2.http",
+              "RelativeDocumentMoniker": "Test2\\Test2.http",
+              "ToolTip": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\Test2\\Test2\\Test2.http",
+              "RelativeToolTip": "Test2\\Test2.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-10-28T11:15:14.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\Test2\\Test2\\Program.cs",
+              "RelativeDocumentMoniker": "Test2\\Program.cs",
+              "ToolTip": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\Test2\\Test2\\Program.cs",
+              "RelativeToolTip": "Test2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T10:59:03.769Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
