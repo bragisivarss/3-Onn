@@ -17,6 +17,7 @@ namespace EF_Core.Models
         public string Title { get; set; }
 
         public ICollection<Mark> Marks { get; set; }
-        public ICollection<Subject_Teacher> Subjects_Teachers { get; set; }
+
+        public List<Teacher> Teachers { get; set; } = new List<Teacher>();
     }
 }

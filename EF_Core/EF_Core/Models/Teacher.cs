@@ -20,6 +20,6 @@ namespace EF_Core.Models
         [StringLength(50)]
         public string LastName { get; set; }
 
-        public ICollection<Subject_Teacher> Subjects_Teachers { get; set; }
+        public List<Student> Students { get; set; } = new List<Student>();
     }
 }

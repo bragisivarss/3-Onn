@@ -4,6 +4,7 @@ using EF_Core.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EF_Core.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    partial class SchoolContextModelSnapshot : ModelSnapshot
+    [Migration("20241027161022_finished")]
+    partial class finished
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -90,12 +93,17 @@ namespace EF_Core.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int?>("SubjectId")
+                        .HasColumnType("int");
+
                     b.Property<int?>("TeacherId")
                         .HasColumnType("int");
 
                     b.HasKey("StudentId");
 
                     b.HasIndex("GroupId");
+
+                    b.HasIndex("SubjectId");
 
                     b.HasIndex("TeacherId");
 
@@ -120,25 +128,6 @@ namespace EF_Core.Migrations
                     b.ToTable("Subjects");
                 });
 
-            modelBuilder.Entity("EF_Core.Models.SubjectTeacher", b =>
-                {
-                    b.Property<int>("SubjectTeacherId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SubjectTeacherId"));
-
-                    b.Property<int>("SubjectId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TeacherId")
-                        .HasColumnType("int");
-
-                    b.HasKey("SubjectTeacherId");
-
-                    b.ToTable("SubjectsTeachers");
-                });
-
             modelBuilder.Entity("EF_Core.Models.Teacher", b =>
                 {
                     b.Property<int>("TeacherId")
@@ -157,12 +146,7 @@ namespace EF_Core.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int?>("SubjectId")
-                        .HasColumnType("int");
-
                     b.HasKey("TeacherId");
-
-                    b.HasIndex("SubjectId");
 
                     b.ToTable("Teachers");
                 });
@@ -194,18 +178,15 @@ namespace EF_Core.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("EF_Core.Models.Subject", null)
+                        .WithMany("Students")
+                        .HasForeignKey("SubjectId");
+
                     b.HasOne("EF_Core.Models.Teacher", null)
                         .WithMany("Students")
                         .HasForeignKey("TeacherId");
 
                     b.Navigation("Group");
-                });
-
-            modelBuilder.Entity("EF_Core.Models.Teacher", b =>
-                {
-                    b.HasOne("EF_Core.Models.Subject", null)
-                        .WithMany("Teachers")
-                        .HasForeignKey("SubjectId");
                 });
 
             modelBuilder.Entity("EF_Core.Models.Group", b =>
@@ -222,7 +203,7 @@ namespace EF_Core.Migrations
                 {
                     b.Navigation("Marks");
 
-                    b.Navigation("Teachers");
+                    b.Navigation("Students");
                 });
 
             modelBuilder.Entity("EF_Core.Models.Teacher", b =>

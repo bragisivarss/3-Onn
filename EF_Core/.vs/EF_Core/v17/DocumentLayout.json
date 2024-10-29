@@ -7,20 +7,12 @@
       "RelativeMoniker": "D:0:0:{7BE34260-371E-479D-B144-1B69233CC6D1}|EF_Core\\EF_Core.csproj|solutionrelative:ef_core\\data\\schoolcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BE34260-371E-479D-B144-1B69233CC6D1}|EF_Core\\EF_Core.csproj|c:\\users\\sigursteinn bragi\\source\\repos\\ef_core\\ef_core\\models\\subject_teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BE34260-371E-479D-B144-1B69233CC6D1}|EF_Core\\EF_Core.csproj|solutionrelative:ef_core\\models\\subject_teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7BE34260-371E-479D-B144-1B69233CC6D1}|EF_Core\\EF_Core.csproj|c:\\users\\sigursteinn bragi\\source\\repos\\ef_core\\ef_core\\models\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BE34260-371E-479D-B144-1B69233CC6D1}|EF_Core\\EF_Core.csproj|solutionrelative:ef_core\\models\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BE34260-371E-479D-B144-1B69233CC6D1}|EF_Core\\EF_Core.csproj|c:\\users\\sigursteinn bragi\\source\\repos\\ef_core\\ef_core\\models\\mark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BE34260-371E-479D-B144-1B69233CC6D1}|EF_Core\\EF_Core.csproj|solutionrelative:ef_core\\models\\mark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BE34260-371E-479D-B144-1B69233CC6D1}|EF_Core\\EF_Core.csproj|c:\\users\\sigursteinn bragi\\source\\repos\\ef_core\\ef_core\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BE34260-371E-479D-B144-1B69233CC6D1}|EF_Core\\EF_Core.csproj|solutionrelative:ef_core\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BE34260-371E-479D-B144-1B69233CC6D1}|EF_Core\\EF_Core.csproj|c:\\users\\sigursteinn bragi\\source\\repos\\ef_core\\ef_core\\models\\subjectteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BE34260-371E-479D-B144-1B69233CC6D1}|EF_Core\\EF_Core.csproj|solutionrelative:ef_core\\models\\subjectteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BE34260-371E-479D-B144-1B69233CC6D1}|EF_Core\\EF_Core.csproj|c:\\users\\sigursteinn bragi\\source\\repos\\ef_core\\ef_core\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,6 +21,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{7BE34260-371E-479D-B144-1B69233CC6D1}|EF_Core\\EF_Core.csproj|c:\\users\\sigursteinn bragi\\source\\repos\\ef_core\\ef_core\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BE34260-371E-479D-B144-1B69233CC6D1}|EF_Core\\EF_Core.csproj|solutionrelative:ef_core\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE34260-371E-479D-B144-1B69233CC6D1}|EF_Core\\EF_Core.csproj|c:\\users\\sigursteinn bragi\\source\\repos\\ef_core\\ef_core\\models\\mark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BE34260-371E-479D-B144-1B69233CC6D1}|EF_Core\\EF_Core.csproj|solutionrelative:ef_core\\models\\mark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,6 +43,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "SubjectTeacher.cs",
+              "DocumentMoniker": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\EF_Core\\EF_Core\\Models\\SubjectTeacher.cs",
+              "RelativeDocumentMoniker": "EF_Core\\Models\\SubjectTeacher.cs",
+              "ToolTip": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\EF_Core\\EF_Core\\Models\\SubjectTeacher.cs",
+              "RelativeToolTip": "EF_Core\\Models\\SubjectTeacher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T16:11:10.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Group.cs",
               "DocumentMoniker": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\EF_Core\\EF_Core\\Models\\Group.cs",
               "RelativeDocumentMoniker": "EF_Core\\Models\\Group.cs",
@@ -54,11 +63,12 @@
               "RelativeToolTip": "EF_Core\\Models\\Group.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T16:37:51.9Z"
+              "WhenOpened": "2024-10-24T16:37:51.9Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Mark.cs",
               "DocumentMoniker": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\EF_Core\\EF_Core\\Models\\Mark.cs",
               "RelativeDocumentMoniker": "EF_Core\\Models\\Mark.cs",
@@ -70,49 +80,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\EF_Core\\EF_Core\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "EF_Core\\Models\\Student.cs",
-              "ToolTip": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\EF_Core\\EF_Core\\Models\\Student.cs",
-              "RelativeToolTip": "EF_Core\\Models\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T16:37:44.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Subject.cs",
               "DocumentMoniker": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\EF_Core\\EF_Core\\Models\\Subject.cs",
               "RelativeDocumentMoniker": "EF_Core\\Models\\Subject.cs",
               "ToolTip": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\EF_Core\\EF_Core\\Models\\Subject.cs",
               "RelativeToolTip": "EF_Core\\Models\\Subject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T16:37:38.762Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Subject_Teacher.cs",
-              "DocumentMoniker": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\EF_Core\\EF_Core\\Models\\Subject_Teacher.cs",
-              "RelativeDocumentMoniker": "EF_Core\\Models\\Subject_Teacher.cs",
-              "ToolTip": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\EF_Core\\EF_Core\\Models\\Subject_Teacher.cs",
-              "RelativeToolTip": "EF_Core\\Models\\Subject_Teacher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T16:37:36.936Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Teacher.cs",
               "DocumentMoniker": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\EF_Core\\EF_Core\\Models\\Teacher.cs",
               "RelativeDocumentMoniker": "EF_Core\\Models\\Teacher.cs",
               "ToolTip": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\EF_Core\\EF_Core\\Models\\Teacher.cs",
               "RelativeToolTip": "EF_Core\\Models\\Teacher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T16:37:34.444Z"
             },
@@ -124,7 +110,7 @@
               "RelativeDocumentMoniker": "EF_Core\\Data\\SchoolContext.cs",
               "ToolTip": "C:\\Users\\Sigursteinn Bragi\\source\\repos\\EF_Core\\EF_Core\\Data\\SchoolContext.cs",
               "RelativeToolTip": "EF_Core\\Data\\SchoolContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T18:13:20.422Z",
               "EditorCaption": ""

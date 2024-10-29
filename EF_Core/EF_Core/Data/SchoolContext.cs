@@ -14,14 +14,16 @@ namespace EF_Core.Data
         public DbSet<Mark> Marks { get; set; }
         public DbSet<Group> Groups { get; set; }
         public DbSet<Subject> Subjects { get; set; }
-        public DbSet<Subject_Teacher> Subjects_Teachers { get; set; }
+        public DbSet<SubjectTeacher> SubjectsTeachers { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
 
+        /*
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Subject_Teacher>()
                 .HasKey(st => new { st.SubjectId, st.TeacherId });
         }
+        */
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
