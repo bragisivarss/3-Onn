@@ -13,6 +13,16 @@ namespace SkilaAPI.Data.Repositories
             _db = new SchoolDbContext();
         }
 
+        public async Task<Student> CreateStudentAsync(Student student)
+        {
+            using (var db = _db)
+            {
+                await db.Students.AddAsync(student);
+                await db.SaveChangesAsync();
+                return student;
+            }
+        }
+
         public async Task<List<Student>> GetAllStudentsAsync()
         {
             List<Student> students;
