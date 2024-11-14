@@ -46,5 +46,37 @@ namespace SkilaAPI.Data.Repositories
 
             return s;
         }
+
+        public async Task<Student> UpdateStudentAsync(int id, Student student)
+        {
+            Student s;
+
+            using (var db = _db)
+            {
+                s = await db.Students.FirstOrDefaultAsync(x => x.StudentId == id);
+
+                if (s == null)
+                {
+                    return null;
+                }
+                else
+                {
+                    s.StudentId = id;
+                    s.Marks = student.Marks;
+                    s.FirstName = student.FirstName;
+                    s.LastName = student.LastName;
+
+                    await db.SaveChangesAsync();
+
+                    return s;
+                }
+            }
+        }
+
+        public async Task SaveAsync()
+        {
+            await _db.SaveChangesAsync();
+        }
+
     }
 }

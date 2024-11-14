@@ -34,15 +34,15 @@ namespace SkilaAPI.Controllers
         {
             try
             {
-                if (student == null)
-                {
-                    return BadRequest("Student cannot be empty");
-                }
-                else
+                if (ModelState.IsValid)
                 {
                     var createdStudent = await _repo.CreateStudentAsync(student);
 
                     return CreatedAtAction(nameof(GetStudentById), new { id = createdStudent.StudentId }, createdStudent);
+                }
+                else
+                {
+                    return BadRequest("Student cannot be empty");
                 }
             }
             catch (Exception)
@@ -66,6 +66,51 @@ namespace SkilaAPI.Controllers
                 else
                 {
                     return Ok(stud);
+                }
+            }
+            catch (Exception)
+            {
+                return StatusCode(500);
+            }
+        }
+
+        [HttpPatch]
+        [Route("{id}")]
+        public async Task<ActionResult<Student>> UpdateStudent(int id, [FromBody]Student student)
+        {
+            try
+            {
+                //var updatedStudent = await _repo.UpdateStudentAsync(id, student);
+
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest();
+                }
+                else
+                {
+                    var studentToUpdate = await _repo.GetStudentByIdAsync(id);
+
+                    if (studentToUpdate == null)
+                    { return NotFound(); }
+
+                    if (!string.IsNullOrEmpty(student.FirstName)) 
+                    {
+                        studentToUpdate.FirstName = student.FirstName;
+                    }
+
+                    if (!string.IsNullOrEmpty(student.LastName))
+                    {
+                        studentToUpdate.LastName = student.LastName;
+                    }
+
+                    if (student.GroupId != 0)
+                    {
+                        studentToUpdate.GroupId = student.GroupId;
+                    }
+
+                    await _repo.SaveAsync();
+
+                    return Ok(studentToUpdate);
                 }
             }
             catch (Exception)
