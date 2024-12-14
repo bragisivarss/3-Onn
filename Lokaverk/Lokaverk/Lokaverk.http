@@ -1,0 +1,6 @@
+@Lokaverk_HostAddress = http://localhost:5169
+
+GET {{Lokaverk_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
