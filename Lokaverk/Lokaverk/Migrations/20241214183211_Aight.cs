@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Lokaverk.Migrations
 {
     /// <inheritdoc />
-    public partial class Init : Migration
+    public partial class Aight : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -108,7 +108,7 @@ namespace Lokaverk.Migrations
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "Date", "DishId", "Email", "People", "Price", "UpdatedDate" },
-                values: new object[] { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 13, 19, 20, 0, 31, DateTimeKind.Utc).AddTicks(7297), 1, "gunnsteinnskula@gmail.com", 10, 1000, null });
+                values: new object[] { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 14, 18, 32, 10, 873, DateTimeKind.Utc).AddTicks(6385), 1, "gunnsteinnskula@gmail.com", 10, 1000, null });
 
             migrationBuilder.InsertData(
                 table: "Drinks",

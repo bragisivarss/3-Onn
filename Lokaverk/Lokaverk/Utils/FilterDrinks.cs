@@ -2,16 +2,14 @@
 
 namespace Lokaverk.Utils
 {
-    public class FilterDrinks
+    public static class DrinkFilter
     {
-        public FilterDrinks(List<Drink> drinks)
+        public static List<Drink> FilterValidDrinks(List<Drink> drinks)
         {
-            foreach (Drink drink in drinks)
-            {
-                if (drink.Amount < 0)
-                {
-                }
-            }
+            if (drinks == null || drinks.Count == 0)
+                return new List<Drink>();
+
+            return drinks.Where(drink => drink.Amount > 0).ToList();
         }
     }
 }

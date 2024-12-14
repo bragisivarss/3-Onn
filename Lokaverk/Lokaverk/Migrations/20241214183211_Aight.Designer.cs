@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Lokaverk.Migrations
 {
     [DbContext(typeof(OrderDbContext))]
-    [Migration("20241213192000_Init")]
-    partial class Init
+    [Migration("20241214183211_Aight")]
+    partial class Aight
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -239,7 +239,7 @@ namespace Lokaverk.Migrations
                         {
                             Id = 1,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Date = new DateTime(2024, 12, 13, 19, 20, 0, 31, DateTimeKind.Utc).AddTicks(7297),
+                            Date = new DateTime(2024, 12, 14, 18, 32, 10, 873, DateTimeKind.Utc).AddTicks(6385),
                             DishId = 1,
                             Email = "gunnsteinnskula@gmail.com",
                             People = 10,

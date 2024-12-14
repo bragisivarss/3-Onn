@@ -1,5 +1,6 @@
 ﻿using Lokaverk.Data;
 using Lokaverk.Models;
+using Lokaverk.Utils;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lokaverk.Controllers
@@ -28,14 +29,26 @@ namespace Lokaverk.Controllers
         [Route("/api/create-order")]
         public async Task<IActionResult> CreateOrder([FromBody] Order order)
         {
-            if (order == null)
+            try
             {
-                return BadRequest("Order is null");
-            }
+                if (order == null)
+                {
+                    return BadRequest("Order is null");
+                }
 
-            await _orderRepository.AddAsync(order);
-            await _orderRepository.SaveAsync();
-            return CreatedAtAction(nameof(GetOrderByName), new { email = order.Email }, order);
+                if (order.Drinks != null && order.Drinks.Any())
+                {
+                    order.Drinks = DrinkFilter.FilterValidDrinks(order.Drinks);
+                }
+
+                await _orderRepository.AddAsync(order);
+                await _orderRepository.SaveAsync();
+                return CreatedAtAction(nameof(GetOrderByName), new { email = order.Email }, order);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500);
+            }
         }
 
         [HttpPut]

@@ -236,7 +236,7 @@ namespace Lokaverk.Migrations
                         {
                             Id = 1,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Date = new DateTime(2024, 12, 13, 19, 20, 0, 31, DateTimeKind.Utc).AddTicks(7297),
+                            Date = new DateTime(2024, 12, 14, 18, 32, 10, 873, DateTimeKind.Utc).AddTicks(6385),
                             DishId = 1,
                             Email = "gunnsteinnskula@gmail.com",
                             People = 10,

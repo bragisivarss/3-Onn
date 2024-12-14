@@ -74,6 +74,12 @@ namespace Lokaverk.Data
                 }
             );
 
+            // Configure relationships
+            modelBuilder.Entity<Order>()
+            .HasMany(o => o.Drinks)
+            .WithOne(d => d.Order)
+            .HasForeignKey(d => d.OrderId)
+            .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
