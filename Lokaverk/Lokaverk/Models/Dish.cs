@@ -4,9 +4,9 @@
     {
         public string IdMeal { get; set; }
         public string StrMeal { get; set; }
+        public string strCategory { get; set; }
         public string StrArea { get; set; }
         public string StrMealThumb { get; set; }
-
         public string StrIngredient1 { get; set; }
         public string StrIngredient2 { get; set; }
         public string StrIngredient3 { get; set; }

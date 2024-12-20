@@ -108,6 +108,9 @@ namespace Lokaverk.Migrations
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("strCategory")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Dishes");
@@ -176,6 +179,9 @@ namespace Lokaverk.Migrations
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("idDrink")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("OrderId");
@@ -236,7 +242,7 @@ namespace Lokaverk.Migrations
                         {
                             Id = 1,
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Date = new DateTime(2024, 12, 14, 18, 32, 10, 873, DateTimeKind.Utc).AddTicks(6385),
+                            Date = new DateTime(2024, 12, 20, 13, 20, 13, 771, DateTimeKind.Utc).AddTicks(9106),
                             DishId = 1,
                             Email = "gunnsteinnskula@gmail.com",
                             People = 10,

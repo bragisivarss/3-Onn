@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Lokaverk.Migrations
 {
     /// <inheritdoc />
-    public partial class Aight : Migration
+    public partial class Init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,6 +19,7 @@ namespace Lokaverk.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IdMeal = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     StrMeal = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    strCategory = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     StrArea = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     StrMealThumb = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     StrIngredient1 = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -80,6 +81,7 @@ namespace Lokaverk.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    idDrink = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     StrDrink = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     StrGlass = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     StrDrinkThumb = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -102,18 +104,18 @@ namespace Lokaverk.Migrations
 
             migrationBuilder.InsertData(
                 table: "Dishes",
-                columns: new[] { "Id", "CreatedDate", "IdMeal", "StrArea", "StrIngredient1", "StrIngredient10", "StrIngredient11", "StrIngredient12", "StrIngredient13", "StrIngredient14", "StrIngredient15", "StrIngredient16", "StrIngredient17", "StrIngredient18", "StrIngredient19", "StrIngredient2", "StrIngredient20", "StrIngredient3", "StrIngredient4", "StrIngredient5", "StrIngredient6", "StrIngredient7", "StrIngredient8", "StrIngredient9", "StrMeal", "StrMealThumb", "UpdatedDate" },
-                values: new object[] { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "2", "someArea", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "beef", "url", null });
+                columns: new[] { "Id", "CreatedDate", "IdMeal", "StrArea", "StrIngredient1", "StrIngredient10", "StrIngredient11", "StrIngredient12", "StrIngredient13", "StrIngredient14", "StrIngredient15", "StrIngredient16", "StrIngredient17", "StrIngredient18", "StrIngredient19", "StrIngredient2", "StrIngredient20", "StrIngredient3", "StrIngredient4", "StrIngredient5", "StrIngredient6", "StrIngredient7", "StrIngredient8", "StrIngredient9", "StrMeal", "StrMealThumb", "UpdatedDate", "strCategory" },
+                values: new object[] { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "2", "someArea", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "beef", "url", null, null });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "Date", "DishId", "Email", "People", "Price", "UpdatedDate" },
-                values: new object[] { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 14, 18, 32, 10, 873, DateTimeKind.Utc).AddTicks(6385), 1, "gunnsteinnskula@gmail.com", 10, 1000, null });
+                values: new object[] { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 20, 13, 20, 13, 771, DateTimeKind.Utc).AddTicks(9106), 1, "gunnsteinnskula@gmail.com", 10, 1000, null });
 
             migrationBuilder.InsertData(
                 table: "Drinks",
-                columns: new[] { "Id", "Amount", "CreatedDate", "OrderId", "Price", "StrDrink", "StrDrinkThumb", "StrGlass", "UpdatedDate" },
-                values: new object[] { 1, 2, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, 200, "Coca Cola", "url", "glass", null });
+                columns: new[] { "Id", "Amount", "CreatedDate", "OrderId", "Price", "StrDrink", "StrDrinkThumb", "StrGlass", "UpdatedDate", "idDrink" },
+                values: new object[] { 1, 2, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, 200, "Coca Cola", "url", "glass", null, null });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Drinks_OrderId",

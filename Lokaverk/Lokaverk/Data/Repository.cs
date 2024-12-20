@@ -37,6 +37,23 @@ namespace Lokaverk.Data
             return await _entities.FirstOrDefaultAsync(condition);
         }
 
+        public async Task<T> FindByConditionWithIncludesAsync(
+            Expression<Func<T, bool>> condition,
+            params Expression<Func<T, object>>[] includes)
+        {
+            IQueryable<T> query = _entities;
+
+            if (includes != null)
+            {
+                foreach (var include in includes)
+                {
+                    query = query.Include(include);
+                }
+            }
+
+            return await query.FirstOrDefaultAsync(condition);
+        }
+
         public async Task<IEnumerable<T>> GetAllAsync()
         {
             return await _entities.ToListAsync();

@@ -8,6 +8,7 @@ namespace Lokaverk.Data
         Task<IEnumerable<T>> GetAllAsync();
         Task<T> GetByIdAsync(int id);
         Task<T> FindByConditionAsync(Expression<Func<T, bool>> condition);
+        Task<T> FindByConditionWithIncludesAsync(Expression<Func<T, bool>> condition, params Expression<Func<T, object>>[] includes);
         Task AddAsync(T entity);
         Task UpdateAsync(T entity);
         Task DeleteAsync(int id);
