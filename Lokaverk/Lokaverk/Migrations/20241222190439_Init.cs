@@ -110,7 +110,7 @@ namespace Lokaverk.Migrations
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "CreatedDate", "Date", "DishId", "Email", "People", "Price", "UpdatedDate" },
-                values: new object[] { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 20, 13, 20, 13, 771, DateTimeKind.Utc).AddTicks(9106), 1, "gunnsteinnskula@gmail.com", 10, 1000, null });
+                values: new object[] { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 22, 19, 4, 38, 588, DateTimeKind.Utc).AddTicks(3947), 1, "gunnsteinnskula@gmail.com", 10, 1000, null });
 
             migrationBuilder.InsertData(
                 table: "Drinks",

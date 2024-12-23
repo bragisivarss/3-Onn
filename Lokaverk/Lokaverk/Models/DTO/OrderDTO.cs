@@ -4,14 +4,28 @@ namespace Lokaverk.Models.DTO
 {
     public class OrderDTO
     {
-        public int id { get; set; }
-        public int price { get; set; }
-        public string email { get; set; }
-        public int people { get; set; }
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
+
+        [JsonPropertyName("dishId")]
+        public int DishId { get; set; }
+
+        [JsonPropertyName("price")]
+        public int Price { get; set; }
+
+        [JsonPropertyName("email")]
+        public string Email { get; set; }
+
+        [JsonPropertyName("people")]
+        public int People { get; set; }
 
         [JsonPropertyName("date")]
-        public string date { get; set; }
-        public DishDTO dish { get; set; }
-        public List<DrinkDTO> drinks { get; set; }
+        public string Date { get; set; }
+
+        [JsonPropertyName("dish")]
+        public DishDTO Dish { get; set; }
+
+        [JsonPropertyName("drinks")]
+        public List<DrinkDTO> Drinks { get; set; }
     }
 }
